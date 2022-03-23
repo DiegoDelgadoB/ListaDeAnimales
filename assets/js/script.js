@@ -68,3 +68,14 @@ formulario.addEventListener('submit', function (event) {
         result.innerHTML = `<li>${mascotaNueva.datosPropietario()}</li> <li>${mascotaNueva.datosMascota()}</li>`;
     }
 })
+
+
+limpiar = () => {
+    document.getElementById("propietario").value = "";
+    document.getElementById("telefono").value = "";
+    document.getElementById("direccion").value = "";
+    document.getElementById("nombreMascota").value = "";
+    document.getElementById("tipo").value = "";
+    document.getElementById("enfermedad").value = "";
+    document.getElementById("resultadoLista").innerHTML = ""
+}
